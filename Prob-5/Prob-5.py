@@ -5,7 +5,11 @@
 # <YOUR NAME>
 
 def main():
-    x = eval(2)
-    print("x:", x)
-
+    try:
+        x = eval(2)
+        print("x:", x)
+    except TypeError:
+        print("You are using an incorrect parameter for Eval()")
+        exit
+    
 main()
